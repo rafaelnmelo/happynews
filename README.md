@@ -1,2 +1,10 @@
-# happynews
-App no padrão MVVM consumindo API de notícias 
+## Arquitetura do Projeto
+
+Arquitetura utilizada: MVVM
+
+Foram aplicados design patterns como:
+
+## Bibliotecas Utilizadas
+
+## Funcionalidades
+
