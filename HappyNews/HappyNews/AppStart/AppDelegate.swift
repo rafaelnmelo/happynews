@@ -13,7 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let barAppearance = UINavigationBarAppearance()
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        //Collapsed Title
+        barAppearance.titleTextAttributes = textAttributes
+        
+        //Large Title
+        barAppearance.backgroundColor = .systemBlue
+        barAppearance.largeTitleTextAttributes = textAttributes
+        
+        if #available(iOS 15, *) {
+            UINavigationBar.appearance().standardAppearance = barAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = barAppearance
+        }
+        
         return true
     }
 
